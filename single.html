@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>jQuery Mobile</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+  <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head>
+
+<body>
+  <div data-role="page" id="page1">
+    <div data-role="header" data-position="fixed">
+      <h1>최신 영화 목록</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#page1" class="ui-btn-active ui-state-persist">홈</a></li>
+          <li><a href="#page2">영화목록</a></li>
+          <li><a href="#page3">이벤트</a></li>
+          <li><a href="#page4">마이페이지</a></li>
+        </ul>
+      </div>
+    </div>
+    <div data-role="content">
+      <h1>홈</h1>
+      <p>content 영역</p>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>© 2023 최신 영화 소개 사이트. All rights reserved.</h4>
+    </div>
+  </div>
+
+  <div data-role="page" id="page2">
+    <div data-role="header" data-position="fixed">
+      <h1>최신 영화 목록</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#page1" data-direction="reverse">홈</a></li>
+          <li><a href="#page2" class="ui-btn-active ui-state-persist">영화목록</a></li>
+          <li><a href="#page3">이벤트</a></li>
+          <li><a href="#page4">마이페이지</a></li>
+        </ul>
+      </div>
+    </div>
+    <div data-role="content">
+      <h1 style="margin-bottom: 40px;">최신 영화 목록</h1>
+      <ul data-role="listview">
+        <li><a href="#"><img
+              src="https://img.megabox.co.kr/SharedImg/2023/04/30/OgS8faQYFVwubBYo1MzvrwGQznPGHAPw_420.jpg" width="80px"
+              height="80px">분노의 질주</a></li>
+        <li><a href="#"><img
+              src="https://img.megabox.co.kr/SharedImg/2023/05/07/XbkZesk2KFfQbbagfMtyp8rVUWi8568M_420.jpg" width="80px"
+              height="80px">범죄도시</a></li>
+        <li><a href="#"><img
+              src="https://img.megabox.co.kr/SharedImg/2023/05/19/SBvUFPP37hPjV7l3usCZw8ZHNo5rRNtM_420.jpg" width="80px"
+              height="80px">인어공주</a>
+        </li>
+        <li><a href="#"><img
+              src="https://img.megabox.co.kr/SharedImg/2023/05/03/cNm7rJN6pYfAPbDgwZD2ppPZtIqBGUyQ_420.jpg" width="80px"
+              height="80px">가디언즈 오브 갤럭시</a>
+        </li>
+        <li><a href="#"><img
+              src="https://img.megabox.co.kr/SharedImg/2023/03/17/GAxEUFAGtnYagesWNyGG9E2JRXwbIOh2_420.jpg" width="80px"
+              height="80px">슈퍼 마리오 브라더스</a>
+        </li>
+      </ul>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>© 2023 최신 영화 소개 사이트. All rights reserved.</h4>
+    </div>
+  </div>
+
+
+  <div data-role="page" id="page3">
+    <div data-role="header" data-position="fixed">
+      <h1>최신 영화 목록</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#page1" data-direction="reverse">홈</a></li>
+          <li><a href="#page2" data-direction="reverse">영화목록</a></li>
+          <li><a href="#page3" class="ui-btn-active ui-state-persist">이벤트</a></li>
+          <li><a href="#page4">마이페이지</a></li>
+        </ul>
+      </div>
+    </div>
+    <div data-role="content">
+      <h1>이벤트</h1>
+      <ul data-role="listview" data-filter="true" data-filter-placeholder="해당 이벤트를 입력하세요">
+        <li data-role="listdivider">ㄱ<span class="ui-li-count">1</span></li>
+        <li><a href="#">강</a></li>
+        <li data-role="listdivider">ㅂ<span class="ui-li-count">2</span></li>
+        <li><a href="#">바다</a></li>
+        <li><a href="#">바다새</a></li>
+        <li data-role="listdivider">ㅎ<span class="ui-li-count">1</span></li>
+        <li><a href="#">할인카드 조회하고 혜택받자! 상세보기</a></li>
+      </ul>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>© 2023 최신 영화 소개 사이트. All rights reserved.</h4>
+    </div>
+  </div>
+
+  <div data-role="page" id="page4">
+    <div data-role="header" data-position="fixed">
+      <h1>최신 영화 목록</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#page1" data-direction="reverse">홈</a></li>
+          <li><a href="#page2" data-direction="reverse">영화목록</a></li>
+          <li><a href="#page3" data-direction="reverse">이벤트</a></li>
+          <li><a href="#page4" class="ui-btn-active ui-state-persist">마이페이지</a></li>
+        </ul>
+      </div>
+    </div>
+    <div data-role="content">
+      <h1>MY page</h1>
+      <p>content 영역</p>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>© 2023 최신 영화 소개 사이트. All rights reserved.</h4>
+    </div>
+  </div>
+
+</body>
+
+</html>
